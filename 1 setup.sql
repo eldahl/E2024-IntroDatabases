@@ -1,0 +1,25 @@
+CREATE DATABASE COMPANY;
+GO;
+USE COMPANY;
+GO;
+CREATE TABLE EMPLOYEE(
+	Fname VARCHAR(255),
+	Minit VARCHAR(3),
+	Lname VARCHAR(255),
+	Ssn NUMERIC(9, 0) NOT NULL,
+	Bdata DATE,
+	Addresss VARCHAR(255),
+	Sex VARCHAR(1),
+	Salary NUMERIC(10, 2),
+	Super_ssn NUMERIC(9, 0),
+	Dno INT
+);
+
+CREATE TABLE DEPARTMENT(
+	Dname VARCHAR(255),
+	Dnumber INT NOT NULL,
+	Mgr_ssn NUMERIC(9,0),
+ 	Mgr_start_date DATE
+);
+GO;
+

@@ -1,0 +1,36 @@
+USE COMPANY;
+GO;
+
+CREATE TABLE DEPENDENT (
+    Essn NUMERIC(9, 0) NOT NULL,
+    Dependent_Name VARCHAR(255) NOT NULL,
+    Sex VARCHAR(1),
+    BDate DATE,
+    Relationship VARCHAR(255),
+    PRIMARY KEY (Essn, Dependent_Name),
+    FOREIGN KEY (Essn) REFERENCES EMPLOYEE(Ssn)
+);
+
+CREATE TABLE DEPT_LOCATIONS (
+    DNumber INT NOT NULL,
+    DLocation VARCHAR(255) NOT NULL,
+    PRIMARY KEY (DNumber, DLocation),
+    FOREIGN KEY (DNumber) REFERENCES DEPARTMENT(Dnumber),
+);
+
+CREATE TABLE WORKS_ON (
+    Essn NUMERIC(9,0) NOT NULL,
+    Pno INT NOT NULL,
+    Hours FLOAT,
+    PRIMARY KEY (Essn, Pno),
+    FOREIGN KEY (Essn) REFERENCES EMPLOYEE(Ssn)
+);
+
+CREATE TABLE PROJECT (
+    PName VARCHAR(255),
+    PNumber INT PRIMARY KEY NOT NULL,
+    PLocation VARCHAR(255),
+    DNum INT,
+    FOREIGN KEY (DNum) REFERENCES DEPARTMENT(Dnumber)
+);
+GO;

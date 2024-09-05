@@ -37,7 +37,7 @@ GO
 
 CREATE TABLE Dept_Locations(
 	DNUmber			int				NOT NULL,
-	DLocation		nvarchar(50)	NOT NULL,
+	DLocation		nvarchar(50)	NOT NULL
 	CONSTRAINT PK_Dept_Locations PRIMARY KEY (DNUmber, DLocation)
 ) 
 GO
@@ -138,6 +138,10 @@ INSERT INTO Works_on (Essn, Pno, [Hours]) VALUES (987987987, 10, 35)
 INSERT INTO Works_on (Essn, Pno, [Hours]) VALUES (987987987, 30, 5)
 INSERT INTO Works_on (Essn, Pno, [Hours]) VALUES (999887777, 10, 10)
 INSERT INTO Works_on (Essn, Pno, [Hours]) VALUES (999887777, 30, 30)
+
+-- Added to file
+INSERT INTO Works_on (Essn, Pno, [Hours]) VALUES (333445555, 1, 10)
+INSERT INTO Works_on (Essn, Pno, [Hours]) VALUES (333445555, 30, 10)
 
 -- Setup referential integrity constraints
 

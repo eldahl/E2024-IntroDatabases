@@ -1,6 +1,9 @@
 # Exercise: Normalization
-***In this exercise you will practice normalizing the relations of a database. For this particular exercise we will use a relation for a Pet Health Clinic. The relation is shown below:***
-![Pet Health Clinic relations](PetHealthClinic_Relations.png)
+***In this exercise you will practice normalizing the relations of a database. For this particular exercise we will use a relation for a Pet Health Clinic. The relation is shown below:***  
+<p align="center">
+  <img src="PetHealthClinic_Relations.png" alt="Pet Health Clinic relations"/>
+</p>
+
 # Find the primary key
 ***For the Pet Health Clinic relation, find the primary key. If there is no primary key, explain why.***    
 The primary key is the Pet ID column, as this is a unique identifier for the pet.   
